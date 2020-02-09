@@ -70,4 +70,10 @@ pip install nbdev
 ```
 etc.
 
+Then activate it as default environment:
+
+```
+echo 'conda activate parrot' >> .bashrc
+```
+
 ## 7. To be continued when I add new stuff
