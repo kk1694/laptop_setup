@@ -73,7 +73,7 @@ etc.
 Then activate it as default environment:
 
 ```
-echo 'conda activate parrot' >> .bashrc
+echo 'conda activate all' >> .bashrc
 ```
 
 ## 7. To be continued when I add new stuff
