@@ -85,8 +85,24 @@ Then, create `all` environment:
 conda create -n all
 conda activate all
 conda install pip
-conda install -c conda-forge notebook
+conda install -c conda-forge notebook   
 echo 'conda activate all' >> .bashrc
+```
+
+## Install CUDA
+
+Install gcc:    
+
+```
+sudo apt install gcc
+``` 
+
+Follow the steps on the [Nvidia](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&=Ubuntu&target_version=20.04&target_type=deb_network) website.
+
+Don't forget to add cuda to your path, i.e.
+
+```
+export PATH=/usr/local/cuda-11.3/bin${PATH:+:${PATH}}
 ```
 
 ## Install Useful Tools
