@@ -54,8 +54,9 @@ Then `source .bashrc`.
 
 ## Download Editors
 
-1. Download (VSCode)[https://code.visualstudio.com/] from their website and install it.
-1. Download (Obsidian)[https://obsidian.md/] App image and put it in `$HOME/bin`
+1. Download [VSCode](https://code.visualstudio.com/) from their website and install it.
+1. Download [Atom](https://atom.io/download/deb) and install it.
+1. Download [Obsidian](https://obsidian.md/) App image and put it in `$HOME/bin`
 
 ## Install custom functions
 
@@ -76,7 +77,7 @@ source .bashrc
 
 ## Install miniconda
 
-(Get the latest version)[https://docs.conda.io/en/latest/miniconda.html] and install it.
+[Get the latest version](https://docs.conda.io/en/latest/miniconda.html) and install it.
 
 Then, create `all` environment:
 
@@ -88,3 +89,11 @@ conda install -c conda-forge notebook
 echo 'conda activate all' >> .bashrc
 ```
 
+## Install Useful Tools
+
+```
+sudo apt install curl
+sudo apt install tmux
+```
+
+Add CLI-get from the [firefox extensions](https://addons.mozilla.org/en-GB/firefox/addon/cliget/)
