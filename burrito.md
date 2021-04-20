@@ -36,6 +36,23 @@ ssh-keygen
 cat .ssh/id_rsa.pub
 ```
 
+## Install CUDA
+
+Install gcc:    
+
+```
+sudo apt install gcc
+``` 
+
+Follow the steps on the [Nvidia](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&=Ubuntu&target_version=20.04&target_type=deb_network) website.
+
+Don't forget to add cuda to your path, i.e.
+
+```
+export PATH=/usr/local/cuda-11.3/bin${PATH:+:${PATH}}
+```
+
+
 ## Customize shell
 
 I'm using the bash-it github repo.
@@ -88,21 +105,28 @@ conda install pip
 conda install -c conda-forge notebook   
 echo 'conda activate all' >> .bashrc
 ```
+## Install docker
 
-## Install CUDA
+Follow steps on [docker website](https://docs.docker.com/engine/install/ubuntu/).
 
-Install gcc:    
-
-```
-sudo apt install gcc
-``` 
-
-Follow the steps on the [Nvidia](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&=Ubuntu&target_version=20.04&target_type=deb_network) website.
-
-Don't forget to add cuda to your path, i.e.
+Don't forget the post-install setup (so that docker can be run without sudo):
 
 ```
-export PATH=/usr/local/cuda-11.3/bin${PATH:+:${PATH}}
+sudo groupadd docker
+sudo usermod -aG docker $USER
+```
+
+Log out and back in, and test
+```
+docker run hello-world
+```
+
+Also, install `docker-compose` from [the docker website](sudo chmod +x /usr/local/bin/docker-compose).
+
+Check with
+
+```
+docker-compose --version
 ```
 
 ## Install Useful Tools
