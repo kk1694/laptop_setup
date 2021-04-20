@@ -134,6 +134,7 @@ docker-compose --version
 ```
 sudo apt install curl
 sudo apt install tmux
+sudo apt-get install gimp
 ```
 
 Add CLI-get from the [firefox extensions](https://addons.mozilla.org/en-GB/firefox/addon/cliget/)
