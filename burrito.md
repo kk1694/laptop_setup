@@ -135,6 +135,12 @@ docker-compose --version
 sudo apt install curl
 sudo apt install tmux
 sudo apt-get install gimp
+sudo apt-get install feh
 ```
 
 Add CLI-get from the [firefox extensions](https://addons.mozilla.org/en-GB/firefox/addon/cliget/)
+
+Install telegram:
+```
+sudo apt install telegram-desktop
+```
