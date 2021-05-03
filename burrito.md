@@ -52,7 +52,6 @@ Don't forget to add cuda to your path, i.e.
 export PATH=/usr/local/cuda-11.3/bin${PATH:+:${PATH}}
 ```
 
-
 ## Customize shell
 
 I'm using the bash-it github repo.
@@ -68,6 +67,16 @@ export BASH_IT_THEME="powerline-plain"
 (Note: not all themes print out the anaconda environment)
 
 Then `source .bashrc`.
+
+## Mount External Drive
+
+You can go `sudo fdisk -l` or `lsblk` to see the location of the unmounted hard drive. Burrito had an 2TB SSD drive under `/dev/sda`. To mount it and add permissions:
+
+```
+sudo mount /dev/sda /mnt/data
+sudo chmod -R 777 /mnt/data/
+```
+
 
 ## Download Editors
 
@@ -133,12 +142,13 @@ docker-compose --version
 
 ```
 sudo apt install curl
+sudo apt install net-tools
 sudo apt install tmux
 sudo apt-get install gimp
 sudo apt-get install feh
 ```
 
-Add CLI-get from the [firefox extensions](https://addons.mozilla.org/en-GB/firefox/addon/cliget/)
+Add CLI-get from the [firefox extensions](https://addons.mozilla.org/en-GB/firefox/addon/cliget/). Also add the [start.me](https://addons.mozilla.org/en-GB/firefox/addon/startme/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) addon
 
 Install telegram:
 ```
